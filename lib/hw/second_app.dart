@@ -49,7 +49,7 @@ class HomePage extends State<NumberShapesApp> {
 
   bool isSquare(int number){
       int square = 0;
-      for(int i = 0; i <= number; i++){
+      for(int i = 0; i <= number / 2; i++){
         square = i*i;
         if(number == square)
           return true;
@@ -58,7 +58,7 @@ class HomePage extends State<NumberShapesApp> {
     }
   bool isCube(int number){
       int cube = 0;
-      for(int i = 0; i <= number; i++){
+      for(int i = 0; i <= number / 3; i++){
         cube = i * i * i;
         if (number == cube)
           return true;
